@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+defaultTasks 'compile'
+
+mainClassName = 'com.nohowdezign.vision.VisionMain'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile group: 'org.boofcv', name: 'boofcv', version: '0.16'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.1'
+}
