@@ -1,0 +1,22 @@
+*.class
+
+/bin/
+/build/
+/eclipse/
+*.log
+*.log.*
+.classpath
+.project
+!.gitignore
+/.gradle/
+/.settings/
+!/gradle/
+!/src/
+*.db
+props.json
+
+#Ignore settings for IntelliJ-IDEA
+/out
+*.iml
+*.ipr
+*.iws
